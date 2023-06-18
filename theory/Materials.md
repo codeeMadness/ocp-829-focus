@@ -6,23 +6,256 @@
 
 [Exams](https://www.myexamcloud.com/onlineexam/index.html)
 
-<h3><b>My Study Plan</b></h3>
+<h3><b>My Study Plan</b></h3> ✅🔲
 
 <table>
   <tr>
     <th>Chapter</th>
-    <th>Days</th>
+    <th>Pages</th>
+    <th>Days (5p/d)</th>
+    <th>Progress</th>
+    <th>Notes</th>
     <th>Status</th>
   </tr>
   <tr>
     <td>1</td>
-    <td>F</td>
+    <td>50</td>
+    <td>12</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
     <td>🔲</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>F</td>
-    <td>✅</td>
+    <td>30</td>
+    <td>8</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>40</td>
+    <td>10</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>50</td>
+    <td>12</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>40</td>
+    <td>10</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>50</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
+  </tr>
+  <tr>
+    <td>Review + Exam</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td>🔲</td>
   </tr>
   
 </table>
