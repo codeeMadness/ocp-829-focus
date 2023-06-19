@@ -13,15 +13,15 @@
     <th>Chapter</th>
     <th>Pages</th>
     <th>Days (5p/d)</th>
-    <th>Progress</th>
+    <th>Progress (days - pages)</th>
     <th>Notes</th>
     <th>Status</th>
   </tr>
   <tr>
     <td>1</td>
-    <td>50</td>
-    <td>12</td>
-    <td></td>
+    <td>65</td>
+    <td>15</td>
+    <td>2 - 25/65</td>
     <td></td>
     <td>🔲</td>
   </tr>
