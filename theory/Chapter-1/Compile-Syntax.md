@@ -171,3 +171,22 @@ public class Meerkat { // then comes the class. Required
     double height; // another field - they don't need to be together. No required
 }
 ```
+
+```java
+// result: number = 5
+// Fields and blocks are run first in order, setting number to 3 and then 4
+// Then the constructor runs, setting number to 5
+public class Egg {
+    public Egg() {
+        number = 5;
+    }
+
+    public static void main(String[] args) {
+        Egg egg = new Egg();
+        System.out.println(egg.number);
+    }
+
+    private int number = 3;
+    { number = 4; } 
+}
+```
