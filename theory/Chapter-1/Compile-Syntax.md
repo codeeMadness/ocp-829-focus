@@ -190,3 +190,26 @@ public class Egg {
     { number = 4; } 
 }
 ```
+
+<h2>Identifiers</h2>
+
+■Identifiers must begin with a letter, a currency symbol, or a _ symbol. Currency symbols include dollar ($), yuan (¥), euro (€), and so on.
+
+■ Identifiers can include numbers but not start with them.
+
+■ A single underscore _ is not allowed as an identifier.
+
+■ You cannot use the same name as a Java keyword (A reserved word).
+
+<h2>Declaring Multiple Variables</h2>
+
+```java
+void sandFence() {
+    String s1, s2; // not initialize
+    String s3 = "yes", s4 = "no";
+    
+    int i1, i2, i3 = 0; //only i3 is initialized
+
+    int num, String value; // DOES NOT COMPILE
+}
+```

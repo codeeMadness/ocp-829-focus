@@ -21,12 +21,12 @@
     <td>1</td>
     <td>65</td>
     <td>15</td>
-    <td>3 - 33/65</td>
+    <td>4 - 46/65</td>
     <td></td>
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -42,7 +42,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -58,7 +58,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -74,7 +74,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -90,7 +90,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -106,7 +106,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -122,7 +122,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -138,7 +138,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -154,7 +154,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -170,7 +170,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -186,7 +186,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -202,7 +202,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -218,7 +218,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -234,7 +234,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
@@ -250,7 +250,7 @@
     <td>🔲</td>
   </tr>
   <tr>
-    <td>Review + Exam</td>
+    <td>Review</td>
     <td></td>
     <td>2</td>
     <td></td>
