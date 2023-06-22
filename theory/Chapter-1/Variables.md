@@ -87,3 +87,26 @@ public class Var {
     }
 }
 ```
+
+```java
+public class Mouse {
+
+    final static int MAX_LENGTH = 5; //class variable
+    int length; //instance variable
+
+    public void grow(int inches) { //method parameteres
+        if (length < MAX_LENGTH) { 
+            int newSize = length + inches; //local variable
+            length = newSize;
+        }
+    }
+}
+```
+
+■ Local variables: In scope from declaration to the end of the block
+
+■ Method parameters: In scope for the duration of the method
+
+■ Instance variables: In scope from declaration until the object is eligible for garbage collection
+
+■ Class variables: In scope from declaration until the program ends
