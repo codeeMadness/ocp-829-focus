@@ -21,21 +21,13 @@
     <td>1</td>
     <td>65</td>
     <td>15</td>
-    <td>5 - 54/65</td>
+    <td>6 - 65/65</td>
     <td></td>
-    <td>🔲</td>
-  </tr>
-  <tr>
-    <td>Review</td>
-    <td></td>
-    <td>2</td>
-    <td></td>
-    <td></td>
-    <td>🔲</td>
+    <td>✅</td>
   </tr>
   <tr>
     <td>2</td>
-    <td>30</td>
+    <td>36</td>
     <td>8</td>
     <td></td>
     <td></td>
