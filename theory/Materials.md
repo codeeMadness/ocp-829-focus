@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td>1</td>
-    <td>65</td>
+    <td>1-65 (65)</td>
     <td>15</td>
     <td>6 - 65/65</td>
     <td></td>
@@ -27,17 +27,9 @@
   </tr>
   <tr>
     <td>2</td>
-    <td>36</td>
+    <td>65-101 (36)</td>
     <td>8</td>
-    <td></td>
-    <td></td>
-    <td>🔲</td>
-  </tr>
-  <tr>
-    <td>Review</td>
-    <td></td>
-    <td>2</td>
-    <td></td>
+    <td>2- 85/101</td>
     <td></td>
     <td>🔲</td>
   </tr>
