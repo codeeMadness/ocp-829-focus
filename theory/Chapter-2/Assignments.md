@@ -44,6 +44,15 @@ byte gloves = 7 * 100; // DOES NOT COMPILE // out of range byte
 <h2>Assignments</h2>
 
 ```java
+int value = 3; // Stored as 0011
+int complement = ~value; // Stored as 1100
+System.out.println(value); // 3
+System.out.println(complement); // -4
+
+System.out.println(-1*value - 1); // -4
+System.out.println(-1*complement - 1); // 3
+
+
 int fish = 1.0; // DOES NOT COMPILE //double -> int
 
 short bird = 1921222; // DOES NOT COMPILE // out of range short
