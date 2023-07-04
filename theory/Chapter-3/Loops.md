@@ -40,6 +40,16 @@ for(long y = 0, int z = 4; x < 5; x++) // DOES NOT COMPILE
 for(long y = 0, x = 4; x < 5 && y < 10; x++, y++)
     System.out.print(y + " ");
 System.out.print(x); // DOES NOT COMPILE
+
+//unreachable code
+int checkDate = 0;
+while(checkDate<10) {
+    checkDate++;
+    if(checkDate>100) {
+        break;
+        checkDate++; // DOES NOT COMPILE
+    }
+}
 ```
 
 <h2>For Each</h2>
@@ -76,4 +86,35 @@ PARENT_LOOP: for(int i=0; i<list.length; i++) {
         }
     }
 }
+
+public class CleaningSchedule {
+    public static void main(String[] args) {
+        CLEANING: for(char stables = 'a'; stables<='d'; stables++) {
+            for(int leopard = 1; leopard<4; leopard++) {
+                if(stables=='b' || leopard==2) {
+                    continue CLEANING;
+                }
+                System.out.println("Cleaning: "+stables+","+leopard);
+            } 
+        } 
+    } 
+}
+
+//unreachable code
+int minute = 1;
+WATCH: while(minute>2) {
+    if(minute++>2) {
+        continue WATCH;
+        System.out.print(minute); // DOES NOT COMPILE
+    }
+}
+
+int hour = 2;
+switch(hour) {
+    case 1: return; hour++; // DOES NOT COMPILE
+    case 2:
+}
+
 ```
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/f6801fd2-5cea-4c61-9ade-0036ff221338)
