@@ -6,6 +6,12 @@
     <th>Chapter</th>
   </tr>
   <tr>
+    <td>Total</td>
+    <td>7/30</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>1</td>
     <td>F</td>
     <td>G</td>
