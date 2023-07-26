@@ -1,0 +1,18 @@
+```java
+public class VisitAttractions {
+    public void walk1(int... steps) {}
+    public void walk2(int start, int... steps) {}
+
+    //A method can have at most one varargs parameter
+    public void walk3(int... steps, int start) {} // DOES NOT COMPILE
+
+    //If a method contains a varargs parameter, it must be the last parameter in the list
+    public void walk4(int... start, int... steps) {} // DOES NOT COMPILE
+}
+
+// Pass an array
+int[] data = new int[] {1, 2, 3};
+walk1(data);
+// Pass a list of values
+walk1(1,2,3);
+```
