@@ -2,15 +2,151 @@
 
 - the method can be called only from within the same class.
 
+```java
+package pond.duck;
+public class FatherDuck {
+    private String noise = "quack";
+    private void quack() {
+        System.out.print(noise); // private access is ok
+    }
+}
+
+package pond.duck;
+public class BadDuckling {
+    public void makeNoise() {
+        var duck = new FatherDuck();
+        duck.quack(); // DOES NOT COMPILE
+        System.out.print(duck.noise); // DOES NOT COMPILE
+    }
+}
+```
+
 <h3>Package Access</h3>
 
 - default access
 - You simply omit the access modifier.
 - the method can be called only from a class in the same package.
 
+```java
+package pond.duck;
+public class MotherDuck {
+    String noise = "quack";
+    void quack() {
+        System.out.print(noise); // package access is ok
+    }
+}
+
+package pond.duck;
+public class GoodDuckling {
+    public void makeNoise() {
+        var duck = new MotherDuck();
+        duck.quack(); // package access is ok
+        System.out.print(duck.noise); // package access is ok
+    }
+}
+
+package pond.swan;
+import pond.duck.MotherDuck; // import another package
+public class BadCygnet {
+    public void makeNoise() {
+        var duck = new MotherDuck();
+        duck.quack(); // DOES NOT COMPILE
+        System.out.print(duck.noise); // DOES NOT COMPILE
+    }
+}
+```
+
 <h3>Protected</h3>
 
 - the method can be called only from a class in the same package or a subclass.
+
+```java
+package pond.shore;
+public class Bird {
+    protected String text = "floating";
+    protected void floatInWater() {
+        System.out.print(text); // protected access is ok
+    }
+}
+
+package pond.shore; // Same package as Bird
+public class BirdWatcher {
+    public void watchBird() {
+        Bird bird = new Bird();
+        bird.floatInWater(); // protected access is ok
+        System.out.print(bird.text); // protected access is ok
+    }
+}
+
+package pond.inland; // Different package than Bird
+import pond.shore.Bird;
+public class BirdWatcherFromAfar { // Not a subclass of Bird
+    public void watchBird() {
+        Bird bird = new Bird();
+        bird.floatInWater(); // DOES NOT COMPILE
+        System.out.print(bird.text); // DOES NOT COMPILE
+    }
+}
+
+package pond.goose; // Different package than Bird
+import pond.shore.Bird;
+public class Gosling extends Bird { // Gosling is a subclass of Bird
+    public void swim() {
+        floatInWater(); // protected access is ok
+        System.out.print(text); // protected access is ok
+    }
+    public static void main(String[] args) {
+        new Gosling().swim();
+    }
+}
+```
+
+```java
+package pond.swan; // Different package than Bird
+import pond.shore.Bird;
+public class Swan extends Bird { // Swan is a subclass of Bird
+    public void swim() {
+        floatInWater(); // protected access is ok
+        System.out.print(text); // protected access is ok
+    }
+    public void helpOtherSwanSwim() {
+        Swan other = new Swan();
+        other.floatInWater(); // subclass access to superclass
+        System.out.print(other.text); // subclass access to superclass
+    }
+    public void helpOtherBirdSwim() {
+        Bird other = new Bird();
+        other.floatInWater(); // DOES NOT COMPILE
+        System.out.print(other.text); // DOES NOT COMPILE
+    }
+}
+
+package pond.goose; // Different package than Bird
+import pond.shore.Bird;
+public class Goose extends Bird {
+    public void helpGooseSwim() {
+        Goose other = new Goose();
+        other.floatInWater();
+        System.out.print(other.text);
+    }
+
+    //Although the object happens to be a Goose, it is stored in a Bird reference.
+    public void helpOtherGooseSwim() {
+        Bird other = new Goose();
+        other.floatInWater(); // DOES NOT COMPILE
+        System.out.print(other.text); // DOES NOT COMPILE
+    }
+}
+
+package pond.duck; // Different package than Goose
+import pond.goose.Goose; 
+public class GooseWatcher {
+    public void watch() {
+        Goose goose = new Goose();
+        goose.floatInWater(); // DOES NOT COMPILE
+    }
+}
+```
 
 <h3>Public</h3>
 
