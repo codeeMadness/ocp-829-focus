@@ -168,5 +168,100 @@ public class ParkTrip {
 
 - access modifiers and optional specifiers can appear in any order
 
+```java
+package pond.duck;
+public class DuckTeacher {
+    public String name = "helpful";
+    public void swim() {
+        System.out.print(name); // public access is ok
+    }
+}
+
+package pond.goose; // Different package
+import pond.duck.DuckTeacher;
+public class LostDuckling {
+    public void swim() {
+    var teacher = new DuckTeacher();
+    teacher.swim(); // allowed
+        System.out.print("Thanks" + teacher.name); // allowed
+    }
+}
+```
+
 ![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/3d2fbc19-5ce9-4534-a7ac-7134ecca1a01)
+
+<h2>Static</h2>
+
+- For utility or helper methods that don’t require any object state. 
+- For state that is shared by all instances of a class. All instances must share the same state.
+
+```java
+public static void main(String[] unused) {
+    var p1 = new Penguin();
+    p1.name = "Lilly";
+    p1.nameOfTallestPenguin = "Lilly";
+    var p2 = new Penguin();
+    p2.name = "Willy";
+    p2.nameOfTallestPenguin = "Willy";
+    System.out.println(p1.name); // Lilly
+    System.out.println(p1.nameOfTallestPenguin); // Willy
+    System.out.println(p2.name); // Willy
+    System.out.println(p2.nameOfTallestPenguin); // Willy
+}
+
+//trickier
+public class Snake {
+    public static long hiss = 2;
+}
+System.out.println(Snake.hiss); //easy one!
+
+// You can use an instance of the object to call a static method. 
+// The compiler checks for the type of the reference and uses that instead of the object
+Snake s = new Snake();
+System.out.println(s.hiss); // s is a Snake
+s = null;
+System.out.println(s.hiss); // s is still a Snake
+
+Snake.hiss = 4;
+Snake snake1 = new Snake();
+Snake snake2 = new Snake();
+snake1.hiss = 6;
+snake2.hiss = 5;
+System.out.println(Snake.hiss); //5 - shared all between instances, not care state
+```
+
+<h2>Class vs Instance Membership</h2>
+
+- A static member cannot call an instance member without referencing an instance of the class
+- Only an instance method can call another instance method on the same class without using a reference
+
+```java
+public class Gorilla {
+    public static int count;
+    public static void addGorilla() { count++; }
+    public void babyGorilla() { count++; }
+    public void announceBabies() {
+        addGorilla();
+        babyGorilla();
+    }
+    public static void announceBabiesToEveryone() {
+        addGorilla();
+        babyGorilla(); // DOES NOT COMPILE
+    }
+    public int total;
+    public static double average = total / count; // DOES NOT COMPILE
+}
+
+public class Counter {
+    private static int count;
+    public Counter() { count++; }
+    public static void main(String[] args) {
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+        Counter c3 = new Counter();
+        // we didn’t write Counter.count => because we are already in that class
+        System.out.println(count); // 3
+    }
+}
+```
 
