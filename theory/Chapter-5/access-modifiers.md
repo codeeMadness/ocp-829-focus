@@ -230,6 +230,32 @@ snake2.hiss = 5;
 System.out.println(Snake.hiss); //5 - shared all between instances, not care state
 ```
 
+<h2>Static Final</h2>
+
+```java
+public class ZooPen {
+    private static final int NUM_BUCKETS = 45;
+    public static void main(String[] args) {
+        NUM_BUCKETS = 5; // DOES NOT COMPILE
+    }
+}
+
+public class ZooInventoryManager {
+    private static final String[] treats = new String[10];
+    public static void main(String[] args) {
+        treats[0] = "popcorn";
+    }
+}
+
+// The height variable is not assigned a value anywhere in the class definition, so that line does not compile.
+public class Panda {
+    final static String name = "Ronda";
+    static final int bamboo;
+    static final double height; // DOES NOT COMPILE
+    static { bamboo = 5;}
+}
+```
+
 <h2>Class vs Instance Membership</h2>
 
 - A static member cannot call an instance member without referencing an instance of the class
