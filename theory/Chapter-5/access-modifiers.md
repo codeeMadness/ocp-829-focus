@@ -276,6 +276,23 @@ static {
     three = 3; // DOES NOT COMPILE
     two = 4; // DOES NOT COMPILE
 }
+
+import java.util.List;
+import java.util.Arrays;
+public class Imports {
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList("one", "two");
+    }
+}
+
+import static java.util.Arrays; // DOES NOT COMPILE
+import static java.util.Arrays.asList;
+static import java.util.Arrays.*; // DOES NOT COMPILE
+public class BadZooParking {
+    public static void main(String[] args) {
+        Arrays.asList("one"); // DOES NOT COMPILE
+    }
+}
 ```
 
 <h2>Class vs Instance Membership</h2>
