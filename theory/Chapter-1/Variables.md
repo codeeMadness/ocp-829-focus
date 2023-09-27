@@ -110,3 +110,7 @@ public class Mouse {
 ■ Instance variables: In scope from declaration until the object is eligible for garbage collection
 
 ■ Class variables: In scope from declaration until the program ends
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/7b06f642-b180-465c-b5e0-8eb680b00665)
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/a29e156e-afdd-4b53-973a-4ababd97cce9)
