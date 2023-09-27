@@ -21,8 +21,6 @@ int million1 = 1000000; //ugly
 int million2 = 1_000_000; //best
 ```
 
-![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/4ad82e07-9045-4ff0-a498-d9893174b1a6)
-
 ![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/8b261517-340b-448c-8219-ac3c119186fa)
 
 ![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/e275578e-3009-480a-a510-ab7ef01e0fef)
@@ -41,6 +39,8 @@ String name = null;
 ```
 
 ![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/90c1b496-52fc-43bb-8c02-fb47f91137f3)
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/a153bc76-48fb-4130-bdd7-7c43b5df926d)
 
 <h2>Wrapper Classes</h2>
 
