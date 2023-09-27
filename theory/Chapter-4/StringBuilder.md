@@ -70,6 +70,9 @@ System.out.println(sb);
 
 <h2>Equals</h2>
 
+- "==" is checking for object reference equality
+- equals() uses logical equality
+
 ```java
 var one = new StringBuilder();
 var two = new StringBuilder();
