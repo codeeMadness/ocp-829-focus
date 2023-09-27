@@ -92,4 +92,5 @@ var builder = new StringBuilder("a");
 System.out.println(name == builder); // DOES NOT COMPILE
 ```
 
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/df4703c8-a331-40bb-af48-f8af1fbdae31)
 
