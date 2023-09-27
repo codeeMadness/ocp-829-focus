@@ -72,6 +72,7 @@ System.out.println(sb);
 
 - "==" is checking for object reference equality
 - equals() uses logical equality
+  
 
 ```java
 var one = new StringBuilder();
