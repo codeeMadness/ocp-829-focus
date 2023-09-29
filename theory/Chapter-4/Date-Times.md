@@ -1,3 +1,10 @@
+<h1>LocalDate</h1>
+
+- <b>LocalDate</b> just date (no matter time and timezone)
+- <b>LocalTime</b> just time (no timezone)
+- <b>LocalDateTime</b> date and time (no timezone)
+- <b>ZonedDateTime</b> Contains a date, time, and time zone
+
 ```java
 //The date and time classes have private constructors
 var d = new LocalDate(); // DOES NOT COMPILE
@@ -13,6 +20,26 @@ date = date.plusDays(10); // January 30, 2024
 var date = LocalDate.of(2024, Month.JANUARY, 20);
 date = date.plusMinutes(1); // DOES NOT COMPILE
 ```
+
+```java
+var one = LocalTime.of(5, 15);
+var two = LocalTime.of(6, 30);
+var date = LocalDate.of(2016, 1, 20);
+System.out.println(ChronoUnit.HOURS.between(one, two)); // 1
+System.out.println(ChronoUnit.MINUTES.between(one, two)); // 75
+System.out.println(ChronoUnit.MINUTES.between(one, date)); // DateTimeException
+
+LocalTime time = LocalTime.of(3,12,45);
+System.out.println(time); // 03:12:45
+LocalTime truncated = time.truncatedTo(ChronoUnit.MINUTES);
+System.out.println(truncated); // 03:12
+```
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/d5639e4b-5333-4b16-b81f-a3b99f202ed1)
+
+<h1>Period</h1>
+
+- Period is a day or more of time
 
 ```java
 var annually = Period.ofYears(1); // every 1 year
@@ -31,19 +58,9 @@ System.out.println(dateTime.plus(period)); // 2022–02–20T015
 System.out.println(time.plus(period)); // Exception
 ```
 
-```java
-var one = LocalTime.of(5, 15);
-var two = LocalTime.of(6, 30);
-var date = LocalDate.of(2016, 1, 20);
-System.out.println(ChronoUnit.HOURS.between(one, two)); // 1
-System.out.println(ChronoUnit.MINUTES.between(one, two)); // 75
-System.out.println(ChronoUnit.MINUTES.between(one, date)); // DateTimeException
+<h1>Duration</h1>
 
-LocalTime time = LocalTime.of(3,12,45);
-System.out.println(time); // 03:12:45
-LocalTime truncated = time.truncatedTo(ChronoUnit.MINUTES);
-System.out.println(truncated); // 03:12
-```
+- For Duration, you can specify the number of days, hours, minutes, seconds, or nanoseconds
 
 ```java
 var date = LocalDate.of(2022, 1, 20);
