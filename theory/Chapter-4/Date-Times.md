@@ -35,7 +35,7 @@ LocalTime truncated = time.truncatedTo(ChronoUnit.MINUTES);
 System.out.println(truncated); // 03:12
 ```
 
-![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/d5639e4b-5333-4b16-b81f-a3b99f202ed1)
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/cb61caee-ba76-42b6-b556-4b96cdf8fc9c)
 
 <h1>Period</h1>
 
@@ -102,5 +102,7 @@ System.out.println(dateTime); // 2022-11-06T01:30-05:00[US/Eastern]
 dateTime = dateTime.plusHours(1);
 System.out.println(dateTime); // 2022-11-06T02:30-05:00[US/Eastern]
 ```
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/d5639e4b-5333-4b16-b81f-a3b99f202ed1)
 
 ![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/624e66a3-bed9-4c65-ab98-b051a52c8010)
