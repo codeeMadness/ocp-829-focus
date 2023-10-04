@@ -21,10 +21,6 @@ int million1 = 1000000; //ugly
 int million2 = 1_000_000; //best
 ```
 
-![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/8b261517-340b-448c-8219-ac3c119186fa)
-
-![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/e275578e-3009-480a-a510-ab7ef01e0fef)
-
 <h2>Reference Types</h2>
 
 - A reference can be assigned to another object of the same or compatible type.

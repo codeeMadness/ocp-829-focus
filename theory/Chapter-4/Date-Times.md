@@ -35,7 +35,7 @@ LocalTime truncated = time.truncatedTo(ChronoUnit.MINUTES);
 System.out.println(truncated); // 03:12
 ```
 
-![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/d5639e4b-5333-4b16-b81f-a3b99f202ed1)
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/cb61caee-ba76-42b6-b556-4b96cdf8fc9c)
 
 <h1>Period</h1>
 
@@ -77,3 +77,32 @@ var days = Duration.ofDays(1);
 System.out.println(date.plus(period)); // 2022–05–26
 System.out.println(date.plus(days)); // Unsupported unit: Seconds
 ```
+
+<h1>Daylight Saving</h1>
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/99dc19df-71a2-417b-b884-e3100f956ed5)
+
+```java
+var date = LocalDate.of(2022, Month.MARCH, 13);
+var time = LocalTime.of(1, 30);
+var zone = ZoneId.of("US/Eastern");
+var dateTime = ZonedDateTime.of(date, time, zone);
+System.out.println(dateTime); // 2022–03-13T01:30-05:00[US/Eastern]
+dateTime = dateTime.plusHours(1);
+System.out.println(dateTime); // 2022–03-13T03:30-04:00[US/Eastern]
+
+var date = LocalDate.of(2022, Month.NOVEMBER, 6);
+var time = LocalTime.of(1, 30);
+var zone = ZoneId.of("US/Eastern");
+var dateTime = ZonedDateTime.of(date, time, zone);
+System.out.println(dateTime); // 2022-11-06T01:30-04:00[US/Eastern]
+
+dateTime = dateTime.plusHours(1);
+System.out.println(dateTime); // 2022-11-06T01:30-05:00[US/Eastern]
+dateTime = dateTime.plusHours(1);
+System.out.println(dateTime); // 2022-11-06T02:30-05:00[US/Eastern]
+```
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/d5639e4b-5333-4b16-b81f-a3b99f202ed1)
+
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/624e66a3-bed9-4c65-ab98-b051a52c8010)
