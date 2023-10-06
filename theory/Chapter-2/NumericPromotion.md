@@ -1,4 +1,4 @@
-![image](https://github.com/codeeMadness/leetcode-practice/assets/102911684/3ce81459-594e-440a-9803-4a24873256fa)
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/c8a21bba-e96b-4a2c-b722-995dd8768dc1)
 
 
 ```java
@@ -43,4 +43,5 @@ short boots = 2 + hat; // DOES NOT COMPILE //both promoted to int
 byte gloves = 7 * 100; // DOES NOT COMPILE // out of range byte
 ```
 
-![image](https://github.com/codeeMadness/leetcode-practice/assets/102911684/4262d231-df84-4b05-876f-071ef1792b56)
+![image](https://github.com/codeeMadness/ocp-829-focus/assets/102911684/63341b68-d0dc-4aef-b1a4-cdef052c0cb9)
+

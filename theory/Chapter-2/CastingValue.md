@@ -15,4 +15,3 @@ short frog = 3 - 2.0; // DOES NOT COMPILE
 long reptile = (long)192301398193810323; // DOES NOT COMPILE
 ```
 
-![image](https://github.com/codeeMadness/leetcode-practice/assets/102911684/906a7cb4-7ab1-4a87-ac6e-ac4ef1d8476b)
