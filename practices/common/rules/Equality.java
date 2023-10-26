@@ -1,5 +1,7 @@
 package common.rules;
 
+import java.util.Arrays;
+
 public class Equality {
 
     public void demoEquality() {
@@ -21,6 +23,12 @@ public class Equality {
     }
 
     public static void main(String[] args) {
+
+        String [] bugs = { "cricket", "beetle", "ladybug" };
+        String [] alias = bugs;
+        alias[0] = "abc";
+        System.out.println(bugs.equals(alias));
+        System.out.println(Arrays.toString(bugs));
 
     }
 }
